@@ -31,6 +31,7 @@ app.use('/api/data-plans', dataPlanRoutes);
 app.use('/api/orders', orderRoutes);
 app.use('/api/transactions', transactionRoutes);
 app.use('/api/support', supportRoutes);
+app.use('/api/seed', require('./routes/seed'));
 
 // Health check route
 app.get('/api/health', (req, res) => {
