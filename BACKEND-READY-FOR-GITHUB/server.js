@@ -18,7 +18,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: process.env.FRONTEND_URL || '*',
+  origin: '*',  // Allow all origins for now
   credentials: true
 }));
 app.use(express.json());
